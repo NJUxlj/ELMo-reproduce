@@ -6,8 +6,9 @@ from torch import nn
 @dataclass
 class Config:
     # Data parameters
-    train_data_path = "data/train.txt"
-    valid_data_path = "data/valid.txt"
+    pretrain_data_path = "data/pretrain_data.json"
+    valid_data_path = "data/valid.json"
+    train_data_path = 'data/train.json'
     char_vocab_path = "data/char_vocab.txt"
     
     # Model parameters
@@ -19,7 +20,7 @@ class Config:
     # Training parameters
     batch_size = 32
     learning_rate = 0.001
-    num_epochs = 10
+    num_epochs = 5
     max_grad_norm = 5.0
     
     # Device configuration
