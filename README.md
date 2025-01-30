@@ -8,6 +8,22 @@ We introduce a new type of deep contextualized word representation that models b
 
 
 
+## Project Structure
+```Plain Text
+elmo_project/  
+├── config.py           # 配置文件  
+├── data/              # 数据目录  
+├── models/            # 模型定义  
+│   ├── __init__.py  
+│   └── elmo.py  
+├── train.py           # 预训练脚本  
+├── finetune.py        # 微调脚本  
+└── utils.py           # 工具函数
+```
+
+
+
+
 
 
 
